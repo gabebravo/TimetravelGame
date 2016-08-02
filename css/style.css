@@ -1,0 +1,40 @@
+div.homewrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff; }
+
+div#page1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%); }
+
+div.background-image {
+  background-image: url("../images/welcome-img.jpg");
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.environment {
+  margin: auto;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: absolute; }
+
+#home {
+  margin-left: 20px; }
+
+div.vanessa {
+  margin-bottom: 100px; }
+
+button.gotopage1, button.gotopage3, button.gotopage2, button.gotopage2, button.gotopage2 {
+  margin-left: 20px; }
+
+#page1, #page2, #page3, #page4, #page5 p {
+  max-width: 50%; }

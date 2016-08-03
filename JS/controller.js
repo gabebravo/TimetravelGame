@@ -1,8 +1,6 @@
 /**
  * Created by gabriel on 8/2/16.
  */
-    ///////* GLOBAL VARS *///////
-    var playerName = "";
 
     function resetGame() {
         console.log('reset any vars for a new game');
@@ -10,7 +8,6 @@
     }
 
     function setPlayer(player){
-        var playerName = player;
         localStorage.setItem("playerName", player);
         //runGame(playerName);
     }
@@ -29,48 +26,23 @@
         return Math.floor((Math.random() * 10) + 1);
     }
 
-    function gameChallenge(pageNum) {
-        switch(pageNum) {
-            case "#page1": /* PAGE 1 Challenge */
-                if ( challengeResult(ranNumGen()) > 1 ){ // won the challenge
+    function gameChallenge(pageChallenge) {
+        switch(pageChallenge) {
+            case "pg1ch1": /* PAGE 1 Challenge */
+                if ( ranNumGen() > 1 ){ // won the challenge
                     return true;
                 } else { // lost the challenge
                     return false;
                 }
                 break;
-            case "#page2": /* PAGE 2 Challenge */
-                if ( challengeResult(ranNumGen()) > 2 ){ // won the challenge
-                    return true;
-                } else { // lost the challenge
-                    return false;
-                }
-                break;
-            case "#page3": /* PAGE 3 Challenge */
-                if ( challengeResult(ranNumGen()) > 7 ){ // won the challenge
-                    return true;
-                } else { // lost the challenge
-                    return false;
-                }
-                break;
-            case "#page4": /* PAGE 4 Challenge */
-                if ( challengeResult(ranNumGen()) > 6 ){ // won the challenge
-                    return true;
-                } else { // lost the challenge
-                    return false;
-                }
-                break;
-            case "#page5": /* PAGE 5 Challenge */
-                if ( challengeResult(ranNumGen()) > 5 ){ // won the challenge
+            case "pg1ch2": /* PAGE 2 Challenge */
+                if ( ranNumGen() > 5 ){ // won the challenge
                     return true;
                 } else { // lost the challenge
                     return false;
                 }
                 break;
         }
-    }
-
-    function runGame(playerName) {
-        console.log('someshit');
     }
 
     function hideOtherPages(currentPage) {

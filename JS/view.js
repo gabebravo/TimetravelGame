@@ -37,16 +37,32 @@ $(document).ready(function() {
                 break;
             case "#page1": /* PAGE 1 */
                 hideOtherPages("#page1");
-                printPage(getPlayer(), "#page1");
-                $('div.page1view').html(page1.description);
-                $('button.gotopage2').on('click', function() {
-                    window.location.href = 'game.html#page2';
-                    location.reload();
+                (getPlayer() === "Vannesa") ? $('div.page1view').html(page1.vanessa.description) : $('div.page1view').html(page1.austin.description);
+                $('button.pg1ch1').on('click', function() {
+                    if (getPlayer() === "Vannesa") {
+                        (gameChallenge("pg1ch1")) ? $('div.page2view').html(page2.vanessa.shoes.description) : $('div.page2view').html(page2.vanessa.shoes.gameover);
+                        window.location.href = 'game.html#page2';
+                        location.reload();
+                    } else {
+                        (gameChallenge("pg1ch1")) ? $('div.page2view').html(page2.austin.shoes.description) : $('div.page2view').html(page2.austin.shoes.gameover);
+                        window.location.href = 'game.html#page2';
+                        location.reload();
+                    }
+                });
+                $('button.pg1ch2').on('click', function() {
+                    if (getPlayer() === "Vannesa") {
+                        (gameChallenge("pg1ch2")) ? $('div.page2view').html(page2.vanessa.timetravel.description) : $('div.page2view').html(page2.vanessa.timetravel.description);
+                        window.location.href = 'game.html#page2';
+                        location.reload();
+                    } else {
+                        (gameChallenge("pg1ch2")) ? $('div.page2view').html(page2.austin.timetravel.description) : $('div.page2view').html(page2.austin.timetravel.description);
+                        window.location.href = 'game.html#page2';
+                        location.reload();
+                    }
                 });
                 break;
             case "#page2": /* PAGE 2 */
                 hideOtherPages("#page2");
-                $('div.page2view').html(page2.description);
                 $('button.gotopage3').on('click', function() {
                     window.location.href = 'game.html#page3';
                     location.reload();

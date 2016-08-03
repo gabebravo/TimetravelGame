@@ -1,46 +1,71 @@
 /**
- * Created by gabriel on 8/2/16.
+by gabriel on 8/2/16.
  */
 
-var player = {};
-var page1 = {};
-
-function printPage(playerName, currentPage) {
-    player.name = playerName;
-    switch(currentPage) {
-        case "#page1": /* PAGE 1 Challenge */
-            page1.description =
-                '<h1>Partner Gone Missing</h1>' +
-                '<p class="page1-description">You show up to the lab and notice there has been a commotion. ' +
-                player.name + ' is usually early to work, but they are nowhere to be found. ' +
-                'You see a formula on the chalkboard and decipher it as an encoded message. ' +
-                'It says, "Track my shoe". You wonder what it means and quickly realize ' + player.name + ' keeps a fitness tracker in their shoe. <p><br><br>' +
-                '<button type="button" class="btn btn-info gotopage2">Locate Shoe Coordinates</button>' +
-                '<button type="button" class="btn btn-info gotopage2">Time Travel Back 2 Hours</button>';
-            break;
-        case "#page2": /* PAGE 2 Challenge */
-            hideAllPages();
-            $(currentPage).show();
-            break;
-        case "#page3": /* PAGE 3 Challenge */
-            hideAllPages();
-            $(currentPage).show();
-            break;
-        case "#page4": /* PAGE 4 Challenge */
-            hideAllPages();
-            $(currentPage).show();
-            break;
-        case "#page5": /* PAGE 5 Challenge */
-            hideAllPages();
-            $(currentPage).show();
-            break;
+var page1 = {
+    vanessa : {
+        description : '<h1>Partner Gone Missing</h1>' +
+        '<p class="page1-description">You show up to the lab and notice there has been a commotion. ' +
+        'Austin is usually early to work, but they are nowhere to be found. ' +
+        'You see a formula on the chalkboard and decipher it as an encoded message. ' +
+        'It says, "Track my shoe". You wonder what it means and quickly realize Austin' +
+        ' keeps a fitness tracker in his shoe. <p><br><br>' +
+        '<button type="button" class="btn btn-info gotopage2 pg1ch1" choice="pg1ch1">Locate Shoe Coordinates</button>' +
+        '<button type="button" class="btn btn-info gotopage2 pg1ch2" choice="pg1ch2">Time Travel Back 2 Hours</button>'
+    },
+    austin : {
+        description : '<h1>Partner Gone Missing</h1>' +
+        '<p class="page1-description">You show up to the lab and notice there has been a commotion. ' +
+        'Vanessa is usually early to work, but they are nowhere to be found. ' +
+        'You see a formula on the chalkboard and decipher it as an encoded message. ' +
+        'It says, "Track my shoe". You wonder what it means and quickly realize Vanessa' +
+        ' keeps a fitness tracker in her shoe. <p><br><br>' +
+        '<button type="button" class="btn btn-info gotopage2 pg1ch1" choice="pg1ch1">Locate Shoe Coordinates</button>' +
+        '<button type="button" class="btn btn-info gotopage2 pg1ch2" choice="pg1ch2">Time Travel Back 2 Hours</button>'
     }
-}
+};
 
 var page2 = {
-    description:
-    '<p class="page2-description">This is the page 2 description<p>' +
-    '<button type="button" class="btn btn-info gotopage3">Next Page</button>'
+    vanessa : {
+        shoes: {
+            description : '<h1>Successfully Tracked Down Coordinates</h1>' +
+            '<p class="page2-description">Shoes Vanessa this worked. <p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Choice 1</button>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch2" choice="pg1ch2">Chioce 2</button>',
+            gameover: '<h1>You Were Unable to Track the Coordinates</h1>' +
+            '<p class="page2-description">Shoes failed for Vanessa<p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Play Again</button>'
+        },
+        timetravel: {
+            description : '<h1>Successfully Traveled Back in Time</h1>' +
+            '<p class="page2-description">Timetravel Vanessa this worked. <p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Choice 1</button>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch2" choice="pg1ch2">Chioce 2</button>',
+            gameover: '<h1>You Were Unable to Traveled Back in Time</h1>' +
+            '<p class="page2-description">Timetrvael failed for Vanessa.<p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Play Again</button>'
+        }
+    },
+    austin : {
+        shoes: {
+            description : '<h1>Successfully Tracked Down Coordinates</h1>' +
+            '<p class="page2-description">Shoes Austin this worked. <p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Choice 1</button>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch2" choice="pg1ch2">Chioce 2</button>',
+            gameover: '<h1>You Were Unable to Track the Coordinates</h1>' +
+            '<p class="page2-description">Shoes failed for Austin<p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Play Again</button>'
+        },
+        timetravel: {
+            description : '<h1>Successfully Tracked Down Coordinates</h1>' +
+            '<p class="page2-description">Timetravel Austin this worked. <p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Choice 1</button>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch2" choice="pg1ch2">Chioce 2</button>',
+            gameover: '<h1>You Were Unable to Traveled Back in Time</h1>' +
+            '<p class="page2-description">Timetrvael failed for Austin.<p><br><br>' +
+            '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Play Again</button>'
+        }
+    }
 }
 
 var page3 = {

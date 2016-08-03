@@ -57,7 +57,7 @@ var page2 = {
             '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Play Again</button>'
         },
         timetravel: {
-            description : '<h1>Successfully Tracked Down Coordinates</h1>' +
+            description : '<h1>Successfully Traveled Back in Time</h1>' +
             '<p class="page2-description">Timetravel Austin this worked. <p><br><br>' +
             '<button type="button" class="btn btn-info gotopage3 pg2ch1" choice="pg1ch1">Choice 1</button>' +
             '<button type="button" class="btn btn-info gotopage3 pg2ch2" choice="pg1ch2">Chioce 2</button>',

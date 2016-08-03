@@ -7,18 +7,28 @@
         playerName = "";
     }
 
-    function setPlayer(player){
-        localStorage.setItem("playerName", player);
+    function setLocalStorage(ObjKey, value){
+        localStorage.setItem(ObjKey, value);
         //runGame(playerName);
     }
 
-    function getPlayer(){
-        var storedPlayerName = localStorage.getItem("playerName");
+    function getLocalStorageVal(ObjKey){
+        var value = localStorage.getItem(ObjKey);
         try {
-            return JSON.parse(storedPlayerName);
+            return JSON.parse(value);
         }
         catch(e) {
-            return storedPlayerName;
+            return value;
+        }
+    }
+
+    function getLocalStorageKey(index){
+        var key = localStorage.key(index);
+        try {
+            return JSON.parse(key);
+        }
+        catch(e) {
+            return key;
         }
     }
 

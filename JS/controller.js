@@ -1,6 +1,15 @@
 /**
  * Created by gabriel on 8/2/16.
  */
+    function hideAllPages(){
+        $('div#home').hide();
+        $('div#page1').hide();
+        $('div#page2').hide();
+        $('div#page3').hide();
+        $('div#page4').hide();
+        $('div#page5').hide();
+        $('div#page6').hide();
+    }
 
     function resetGame() {
         localStorage.clear();
@@ -83,37 +92,31 @@
         }
     }
 
-    function hideOtherPages(currentPage) {
+    function showPages(currentPage) {
         switch(currentPage) {
+            case "#home": /* HOME PAGE */
+                console.log('show the page');
+                $(currentPage).show();
+                break
             case "#page1": /* PAGE 1 Challenge */
-                hideAllPages();
                 $(currentPage).show();
                 break;
             case "#page2": /* PAGE 2 Challenge */
-                hideAllPages();
                 $(currentPage).show();
                 break;
             case "#page3": /* PAGE 3 Challenge */
-                hideAllPages();
                 $(currentPage).show();
                 break;
             case "#page4": /* PAGE 4 Challenge */
-                hideAllPages();
                 $(currentPage).show();
                 break;
             case "#page5": /* PAGE 5 Challenge */
-                hideAllPages();
+            $(currentPage).show();
+                break;
+            case "#page6": /* PAGE 6 Challenge */
                 $(currentPage).show();
                 break;
         }
     }
 
-    function hideAllPages(){
-        $('div#home').hide();
-        $('div#page1').hide();
-        $('div#page2').hide();
-        $('div#page3').hide();
-        $('div#page4').hide();
-        $('div#page5').hide();
-    }
 

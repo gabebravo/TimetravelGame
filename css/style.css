@@ -4,7 +4,11 @@ div.homewrapper {
   left: 50%;
   color: #fff; }
 
+div#home {
+  display: none; }
+
 div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;

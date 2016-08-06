@@ -2,6 +2,33 @@
 by gabriel on 8/2/16.
  */
 
+var homepage = {
+    description : '<h1>Choose Your Character</h1>' +
+    '<div class="row vanessa"><div class="col-xs-3 col-md-4">' +
+    '<img class="img-responsive" src="./images/vanessa.jpg"></div>' +
+    '<div class="col-xs-9 col-md-6"><p>Vanessa Lazer graduated from Harvard '+
+    'at 16-years-old with a PhD in Particle Physics. She became interested in testing Einstein\'s theory '+
+    'on time and space after she became the lead engineer in the Cambridge lab in experimental physics. '+
+    'Vanessa was soon making breakthroughs, especially with her new programming genius, Austin, by her side. '+
+    'And she soon designed theoretical devices that could be used for time traveling. '+
+    'As word spread of this amazing invention, the intelligence community became very interested. '+
+    'Soon, spies were tapping the lab and plotting to steal any prototype. All the biggest world powers wanted '+
+    'to have exclusive control over time travel. As the years unfolded, her colleagues begged her not to continue. '+
+    'Vanessa saw her work as too important and refused. Click on the Vanessa button to play with her and find out '+
+    'what comes next in this great time travel adventure...</p><button type="button" class="btn btn-info pickplayer" '+
+    'character="Vanessa">Vanessa</button></div><div class="col-md-2"></div></div><div class="row"><div class="col-xs-9 col-md-6">'+
+    '<p>Austin Snow is often criticized by his peers as being out of his class. From meager upbringings, '+
+    'Austin was a country boy that grew up on a farm in Arkansas. He was always scrawny and wasn\'t very good as a farm hand, '+
+    'so when he started to show exceptional skills at school, his father took the family savings and bought Austin a Tandy 1000 '+
+    'computer. It would change his life forever. Although Austin never went to college, by the time he was 20-years-old, '+
+    'he was working as lead engineer for the software development team at Macintosh. Steve Jobs saw his genius and eventually '+
+    'told him that he should go work for a greater cause to humanity. Having his pick of the litter, Austin sought out Vanessa'+
+    'and her fledgling time travel project. It was struggling due to a lack of software that could handle the speed of calculations. '+
+    'Over they years, Austin had brush-ins with shady spies, but he always stayed by Vanessa\'s side. Mainly out of his secret love for her. '+
+    'Play with Austin and see what happens next...</p><button type="button" class="btn btn-info pickplayer" character="Austin">Austin</button>'+
+    ' </div><div class="col-xs-3 col-md-4"><img class="img-responsive" src="./images/Austin.jpg"></div><div class="col-md-2"></div></div>'
+}
+
 var page1 = {
     vanessa : {
         description : '<h1>Partner Gone Missing</h1>' +

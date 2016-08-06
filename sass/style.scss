@@ -8,7 +8,7 @@ div.homewrapper {
    color: #fff;
  }
 
-div#page1{
+div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,12 +44,17 @@ div.vanessa{
 
 ///////  OTHER PAGES  ////////
 
-button.gotopage1, button.gotopage3, button.gotopage2, button.gotopage2, button.gotopage2 {
+.btnstyle {
   margin-left: 20px;
+  padding-right: 20px;
 }
-#page1, #page2, #page3, #page4, #page5 p {
-  max-width: 50%;
+@media (max-width: 600px) {
+  .btnstyle {
+    margin-left: 20px;
+    margin-bottom: 20px !important;
+  }
 }
+
 
 
 

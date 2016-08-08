@@ -1,4 +1,21 @@
 
+///////  BACKGROUND IMAGE - SPLASH ////////
+
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.full {
+  background: url(../images/welcome-img.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100% !important;
+}
+
 //////  WELCOME  ///////
 
 div.homewrapper {
@@ -19,12 +36,6 @@ div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
   left: 50%;
   color: #fff;
   transform: translate(-50%, -50%);
-}
-div.background-image{
-  background: url(../images/welcome-img.jpg);
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 //////  HOME  ///////
@@ -53,14 +64,111 @@ div.vanessa{
   margin-left: 20px;
   padding-right: 20px;
 }
-@media (max-width: 600px) {
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+  button.pickplayer {
+    padding: 12px 50px !important;
+    font-size: 35px !important;
+    margin-bottom: 50px !important;
+  }
+  h1.choose-character {
+    padding-top: 30px !important;
+  }
+  p.player-text {
+    font-size: larger !important;
+  }
+  div.vanessa{
+    margin-bottom: 0px !important;
+  }
   .btnstyle {
+    padding: 25px 85px !important;
+    font-size: 50px !important;
     margin-left: 20px;
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
+  }
+  div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
+    width: 80% !important;
+  }
+  p.pagetext {
+    font-size: -webkit-xxx-large !important;
+  }
+  h1.inner-pages{
+    font-size: 75px !important;
+  }
+  .btn-container {
+    text-align: center !important;
   }
 }
 
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+  button.pickplayer {
+    padding: 12px 50px !important;
+    font-size: 35px !important;
+    margin-bottom: 50px !important;
+  }
+  h1.choose-character {
+    padding-top: 30px !important;
+  }
+  p.player-text {
+    font-size: larger !important;
+  }
+  div.vanessa{
+    margin-bottom: 0px !important;
+  }
+  .btnstyle {
+    padding: 25px 85px !important;
+    font-size: 50px !important;
+    margin-left: 20px;
+    margin-bottom: 40px !important;
+  }
+  div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
+    width: 80% !important;
+  }
+  p.pagetext {
+    font-size: -webkit-xxx-large !important;
+  }
+  h1.inner-pages{
+    font-size: 75px !important;
+  }
+  .btn-container {
+    text-align: center !important;
+  }
+}
 
-
-
-
+/* Mobile LD */
+@media screen and (max-width: 350px){
+  button.pickplayer {
+    padding: 12px 50px !important;
+    font-size: 35px !important;
+    margin-bottom: 50px !important;
+  }
+  h1.choose-character {
+    padding-top: 30px !important;
+  }
+  p.player-text {
+    font-size: larger !important;
+  }
+  div.vanessa{
+    margin-bottom: 0px !important;
+  }
+  .btnstyle {
+    padding: 25px 85px !important;
+    font-size: 50px !important;
+    margin-left: 20px;
+    margin-bottom: 40px !important;
+  }
+  div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
+    width: 80% !important;
+  }
+  p.pagetext {
+    font-size: -webkit-xxx-large !important;
+  }
+  h1.inner-pages{
+    font-size: 75px !important;
+  }
+  .btn-container {
+    text-align: center !important;
+  }
+}

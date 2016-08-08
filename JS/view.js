@@ -17,11 +17,7 @@ $(document).ready(function() {
     function pageSpecific(pageID){
         switch(pageID) {
             case "#welcome": /* WELCOME PAGE */
-                var viewport = {
-                    width  : $(window).width(),
-                    height : $(window).height()
-                };
-                $('div.background-image').css({"height": viewport.height+"px", "width": viewport.width+"px"});
+                $('html').addClass("full");
                 $('.playnow').on('click', function(event) {
                     event.preventDefault();
                     window.location.href = 'game.html#home';

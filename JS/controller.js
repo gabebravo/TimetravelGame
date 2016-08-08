@@ -1,6 +1,7 @@
 /**
  * Created by gabriel on 8/2/16.
  */
+
     function hideAllPages(){
         $('div#home').hide();
         $('div#page1').hide();
@@ -95,7 +96,6 @@
     function showPages(currentPage) {
         switch(currentPage) {
             case "#home": /* HOME PAGE */
-                console.log('show the page');
                 $(currentPage).show();
                 break
             case "#page1": /* PAGE 1 Challenge */

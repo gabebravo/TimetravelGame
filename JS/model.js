@@ -3,10 +3,10 @@ by gabriel on 8/2/16.
  */
 
 var homepage = {
-    description : '<h1>Choose Your Character</h1>' +
+    description : '<h1 class="choose-character">Choose Your Character</h1>' +
     '<div class="row vanessa"><div class="col-xs-3 col-md-4">' +
     '<img class="img-responsive" src="./images/vanessa.jpg"></div>' +
-    '<div class="col-xs-9 col-md-6"><p>Vanessa Lazer graduated from Harvard '+
+    '<div class="col-xs-9 col-md-6"><p class="player-text">Vanessa Lazer graduated from Harvard '+
     'at 16-years-old with a PhD in Particle Physics. She became interested in testing Einstein\'s theory '+
     'on time and space after she became the lead engineer in the Cambridge lab in experimental physics. '+
     'Vanessa was soon making breakthroughs, especially with her new programming genius, Austin, by her side. '+
@@ -17,7 +17,7 @@ var homepage = {
     'Vanessa saw her work as too important and refused. Click on the Vanessa button to play with her and find out '+
     'what comes next in this great time travel adventure...</p><button type="button" class="btn btn-info pickplayer" '+
     'character="Vanessa">Vanessa</button></div><div class="col-md-2"></div></div><div class="row"><div class="col-xs-9 col-md-6">'+
-    '<p>Austin Snow is often criticized by his peers as being out of his class. From meager upbringings, '+
+    '<p class="player-text">Austin Snow is often criticized by his peers as being out of his class. From meager upbringings, '+
     'Austin was a country boy that grew up on a farm in Arkansas. He was always scrawny and wasn\'t very good as a farm hand, '+
     'so when he started to show exceptional skills at school, his father took the family savings and bought Austin a Tandy 1000 '+
     'computer. It would change his life forever. Although Austin never went to college, by the time he was 20-years-old, '+
@@ -31,24 +31,24 @@ var homepage = {
 
 var page1 = {
     vanessa : {
-        description : '<h1>Partner Gone Missing</h1>' +
+        description : '<h1 class="inner-pages">Partner Gone Missing</h1>' +
         '<p class="pagetext">You show up to the lab and notice there has been a commotion. ' +
         'Austin is usually early to work, but he is nowhere to be found. ' +
         'You see a formula on the chalkboard and decipher it as an encoded message. ' +
         'It says, "Track my shoe". You wonder what it means and quickly realize Austin' +
-        ' keeps a fitness tracker in his shoe. <div><br><br>' +
+        ' keeps a fitness tracker in his shoe.</p><br><br><div class="btn-container">' +
         '<button type="button" class="btn btn-info pg1ch1 btnstyle" choice="pg1ch1">Locate Shoe Coordinates</button>' +
-        '<button type="button" class="btn btn-info pg1ch2 btnstyle" choice="pg1ch2">Time Travel Back 2 Hours</button>'
+        '<button type="button" class="btn btn-info pg1ch2 btnstyle" choice="pg1ch2">Time Travel Back 2 Hours</button></div>'
     },
     austin : {
-        description : '<h1>Partner Gone Missing</h1>' +
+        description : '<h1 class="inner-pages">Partner Gone Missing</h1>' +
         '<p class="pagetext">You show up to the lab and notice there has been a commotion. ' +
         'Vanessa is usually early to work, but she is nowhere to be found. ' +
         'You see a formula on the chalkboard and decipher it as an encoded message. ' +
         'It says, "Track my shoe". You wonder what it means and quickly realize Vanessa' +
-        ' keeps a fitness tracker in her shoe.<p><br><br>' +
+        ' keeps a fitness tracker in her shoe.</p><br><br><div class="btn-container">' +
         '<button type="button" class="btn btn-info pg1ch1 btnstyle" choice="pg1ch1">Locate Shoe Coordinates</button>' +
-        '<button type="button" class="btn btn-info pg1ch2 btnstyle" choice="pg1ch2">Time Travel Back 2 Hours</button>'
+        '<button type="button" class="btn btn-info pg1ch2 btnstyle" choice="pg1ch2">Time Travel Back 2 Hours</button></div>'
     }
 }
 

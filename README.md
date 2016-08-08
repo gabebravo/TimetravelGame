@@ -66,6 +66,65 @@ PLAY AGAIN
 
 
 
+/////////////////////////////////////////  MEDIA QUERY NOTES  //////////////////////////////////////////////////
+
+/* Retina display */
+@media screen and (min-width: 1024px){
+  .full{
+    background: url('../images/welcome-img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+  .full{
+    background: url('../images/welcome-img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+  .full{
+    background: url('../images/welcome-img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+  .full{
+    background: url('../images/welcome-img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+  .full{
+    background: url('../images/welcome-img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+div.background-image{
+  background: url(../images/welcome-img.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 
 

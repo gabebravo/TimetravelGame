@@ -16,7 +16,7 @@ div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
   transform: translate(-50%, -50%); }
 
 div.background-image {
-  background-image: url("../images/welcome-img.jpg");
+  background: url(../images/welcome-img.jpg);
   position: fixed;
   top: 0;
   left: 0; }

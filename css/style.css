@@ -71,7 +71,10 @@ div.vanessa {
     margin-left: 20px;
     margin-bottom: 40px !important; }
   div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
-    width: 80% !important; }
+    width: 80% !important;
+    top: 15% !important;
+    left: 10% !important;
+    transform: translate(0%, 0%) !important; }
   p.pagetext {
     font-size: -webkit-xxx-large !important; }
   h1.inner-pages {
@@ -98,7 +101,10 @@ div.vanessa {
     margin-left: 20px;
     margin-bottom: 40px !important; }
   div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
-    width: 80% !important; }
+    width: 80% !important;
+    top: 15% !important;
+    left: 10% !important;
+    transform: translate(0%, 0%) !important; }
   p.pagetext {
     font-size: -webkit-xxx-large !important; }
   h1.inner-pages {
@@ -125,7 +131,10 @@ div.vanessa {
     margin-left: 20px;
     margin-bottom: 40px !important; }
   div#page1, div#page2, div#page3, div#page4, div#page5, div#page6 {
-    width: 80% !important; }
+    width: 80% !important;
+    top: 15% !important;
+    left: 10% !important;
+    transform: translate(0%, 0%) !important; }
   p.pagetext {
     font-size: -webkit-xxx-large !important; }
   h1.inner-pages {

@@ -170,7 +170,7 @@ var page4 = {
             description : '<h1 class="inner-pages">Successfully Attacked Austin\'s Captor</h1>' +
             '<p class="pagetext"> You pick up the pipe, silently sneak up on Austin\'s captor while he\'s having a smoke break '+
             ', and knock him square in the back of the head with the pipe. He goes out cold, you quickly pick up his gun and key chain. '+
-            'You find a door on the side of the waerehouse and try a few different keys before you get in. Very carefully, you quietly move through the halls. '+
+            'You find a door on the side of the warehouse and try a few different keys before you get in. Very carefully, you quietly move through the halls. '+
             'Before long, you find Austin, but two guards are watching him closely. You are very anxious, but decide there are only two choices. '+
             'You either have a shootout with guards, or you wait to see what happens next. Either way, you take a chance.<p><br><br>' +
             '<button type="button" class="btn btn-info p4ch1 btnstyle" choice="pg4ch1">Shootout with Austin\'s Guards</button>' +
@@ -197,7 +197,7 @@ var page4 = {
             description : '<h1 class="inner-pages">Successfully Attacked Vanessa\'s Captor</h1>' +
             '<p class="pagetext"> You pick up the pipe, silently sneak up on Vanessa\'s captor while he\'s having a smoke break '+
             ', and knock him square in the back of the head with the pipe. He goes out cold, you quickly pick up his gun and key chain. '+
-            'You find a door on the side of the waerehouse and try a few different keys before you get in. Very carefully, you quietly move through the halls. '+
+            'You find a door on the side of the warehouse and try a few different keys before you get in. Very carefully, you quietly move through the halls. '+
             'Before long, you find Vanessa, but two guards are watching him closely. You are very anxious, but decide there are only two choices. '+
             'You either have a shootout with guards, or you wait to see what happens next. Either way, you take a chance.<p><br><br>' +
             '<button type="button" class="btn btn-info pg4ch1 btnstyle" choice="pg4ch1">Shootout with Vanessa\'s Guards</button>' +

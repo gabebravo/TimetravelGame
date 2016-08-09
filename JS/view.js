@@ -123,33 +123,102 @@ $(document).ready(function() {
                 break;
             case "#page4": /* PAGE 4 */
                 showPages("#page4");
-                $('div.page4view').html(page4.description);
-                $('button.gotopage5').on('click', function() {
+                // conditionals for building the page
+                if (getLocalStorageVal("playerName") === "Vanessa") {
+                    if(getLocalStorageKey(2) === "pg3ch1") {
+                        (getLocalStorageVal("pg3ch1")) ? $('div.page4view').html(page4.vanessa.gunstore.description) : $('div.page4view').html(page4.vanessa.gunstore.gameover);
+                    } else {
+                        (getLocalStorageVal("pg3ch2")) ? $('div.page4view').html(page4.vanessa.pipe.description) : $('div.page4view').html(page4.vanessa.pipe.gameover);
+                    }
+                } else {
+                    if(getLocalStorageKey(2) === "pg3ch1") {
+                        (getLocalStorageVal("pg3ch1")) ? $('div.page4view').html(page4.austin.gunstore.description) : $('div.page4view').html(page4.austin.gunstore.gameover);
+                    } else {
+                        (getLocalStorageVal("pg3ch2")) ? $('div.page4view').html(page4.austin.pipe.description) : $('div.page4view').html(page4.austin.pipe.gameover);
+                    }
+                }
+                // button click events
+                $('button.pg4ch1').on('click', function() {
                     hideAllPages();
+                    setLocalStorage($(this).attr("choice"), gameChallenge($(this).attr("choice"))); // set choice data
                     window.location.href = 'game.html#page5';
+                    location.reload();
+                });
+                $('button.pg4ch2').on('click', function() {
+                    hideAllPages();
+                    setLocalStorage($(this).attr("choice"), gameChallenge($(this).attr("choice"))); // set choice data
+                    window.location.href = 'game.html#page5';
+                    location.reload();
+                });
+                $('button.pg4fail').on('click', function() { // reset game and redirect to homepage
+                    hideAllPages();
+                    resetGame();
+                    window.location.href = 'game.html#home';
                     location.reload();
                 });
                 break;
             case "#page5": /* PAGE 5 */
                 showPages("#page5");
-                $('div.page5view').html(page5.description);
-                $('button.playagainpg5').on('click', function() {
+                // conditionals for building the page
+                if (getLocalStorageVal("playerName") === "Vanessa") {
+                    if(getLocalStorageKey(3) === "pg4ch1") {
+                        (getLocalStorageVal("pg4ch1")) ? $('div.page5view').html(page5.vanessa.shootout.description) : $('div.page5view').html(page5.vanessa.shootout.gameover);
+                    } else {
+                        (getLocalStorageVal("pg4ch2")) ? $('div.page5view').html(page5.vanessa.wait.description) : $('div.page5view').html(page5.vanessa.wait.gameover);
+                    }
+                } else {
+                    if(getLocalStorageKey(3) === "pg4ch1") {
+                        (getLocalStorageVal("pg4ch1")) ? $('div.page5view').html(page5.austin.shootout.description) : $('div.page5view').html(page5.austin.shootout.gameover);
+                    } else {
+                        (getLocalStorageVal("pg4ch2")) ? $('div.page5view').html(page5.austin.wait.description) : $('div.page5view').html(page5.austin.wait.gameover);
+                    }
+                }
+                // button click events
+                $('button.pg5ch1').on('click', function() {
                     hideAllPages();
-                    //resetGame();
-                    window.location.href = 'game.html#welcome';
+                    setLocalStorage($(this).attr("choice"), gameChallenge($(this).attr("choice"))); // set choice data
+                    window.location.href = 'game.html#page6';
+                    location.reload();
+                });
+                $('button.pg5win').on('click', function() { // reset game and redirect to homepage
+                    hideAllPages();
+                    resetGame();
+                    window.location.href = 'game.html#home';
+                    location.reload();
+                });
+                $('button.pg5fail').on('click', function() { // reset game and redirect to homepage
+                    hideAllPages();
+                    resetGame();
+                    window.location.href = 'game.html#home';
                     location.reload();
                 });
                 break;
-            case "#page5": /* PAGE 5 */
+            case "#page6": /* PAGE 6 */
                 showPages("#page6");
-                $('div.page5view').html(page5.description);
-                $('button.playagainpg5').on('click', function() {
-                    hideAllPages();
-                    //resetGame();
-                    window.location.href = 'game.html#welcome';
-                    location.reload();
-                });
-                break;
+                // conditionals for building the page
+                if (getLocalStorageVal("playerName") === "Vanessa") {
+                    if(getLocalStorageKey(4) === "pg5ch1") {
+                        (getLocalStorageVal("pg5ch1")) ? $('div.page6view').html(page6.vanessa.result.description) : $('div.page6view').html(page6.vanessa.result.gameover);
+                    }
+                } else {
+                    if (getLocalStorageKey(4) === "pg5ch1") {
+                        (getLocalStorageVal("pg5ch1")) ? $('div.page6view').html(page6.austin.result.description) : $('div.page6view').html(page6.austin.result.gameover);
+                    }
+                }
+                // button click events
+                    $('button.pg6win').on('click', function() {
+                        hideAllPages();
+                        resetGame();
+                        window.location.href = 'game.html#home';
+                        location.reload();
+                    });
+                    $('button.pg6fail').on('click', function() { // reset game and redirect to homepage
+                        hideAllPages();
+                        resetGame();
+                        window.location.href = 'game.html#home';
+                        location.reload();
+                    });
+                    break;
         }
     }
 

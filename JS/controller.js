@@ -62,7 +62,7 @@
                     return false;
                 }
                 break;
-            case "pg2ch1": /* PAGE 1 Challenge */
+            case "pg2ch1": /* PAGE 2 Challenge */
                 if ( ranNumGen() > 1 ){ // won the challenge
                     return true;
                 } else { // lost the challenge
@@ -76,15 +76,36 @@
                     return false;
                 }
                 break;
-            case "pg3ch1": /* PAGE 1 Challenge */
+            case "pg3ch1": /* PAGE 3 Challenge */
                 if ( ranNumGen() > 2 ){ // won the challenge
                     return true;
                 } else { // lost the challenge
                     return false;
                 }
                 break;
-            case "pg3ch2": /* PAGE 2 Challenge */
+            case "pg3ch2": /* PAGE 3 Challenge */
                 if ( ranNumGen() > 5 ){ // won the challenge
+                    return true;
+                } else { // lost the challenge
+                    return false;
+                }
+                break;
+            case "pg4ch1": /* PAGE 4 Challenge */
+                if ( ranNumGen() > 7 ){ // won the challenge
+                    return true;
+                } else { // lost the challenge
+                    return false;
+                }
+                break;
+            case "pg4ch2": /* PAGE 4 Challenge */
+                if ( ranNumGen() > 3 ){ // won the challenge
+                    return true;
+                } else { // lost the challenge
+                    return false;
+                }
+                break;
+            case "pg5ch1": /* PAGE 4 Challenge */
+                if ( ranNumGen() > 7 ){ // won the challenge
                     return true;
                 } else { // lost the challenge
                     return false;
